@@ -5,11 +5,14 @@ import subprocess
 import os
 
 last_run_test = None
+last_run_test_file = None
 
 class RerunLastGoTestCommand(sublime_plugin.TextCommand):
     def run(self, edit):
+        working_dir = os.path.dirname(last_run_test_file)
+
         file_regex = "^\\s*(\\S[^:]*):(\\d+): ([^\\n]+)"
-        self.view.window().run_command("exec", {"cmd": ["go", "test", "-run", last_run_test], "quiet": True, "file_regex": file_regex})
+        self.view.window().run_command("exec", {"cmd": ["go", "test", "-run", last_run_test], "quiet": True, "file_regex": file_regex, "working_dir": working_dir})
 
 
 # PACKAGE, FILE, TEST
@@ -30,4 +33,6 @@ class RunGoTestCommand(sublime_plugin.TextCommand):
         file_regex = "^\\s*(\\S[^:]*):(\\d+): ([^\\n]+)"
         self.view.window().run_command("exec", {"cmd": ["go", "test", "-run", test_name], "quiet": True, "file_regex": file_regex})
         global last_run_test
+        global last_run_test_file
         last_run_test = test_name
+        last_run_test_file = self.view.file_name()
