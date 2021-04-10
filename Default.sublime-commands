@@ -1,0 +1,4 @@
+[
+   { "caption": "run go test", "command": "run_go_test" },
+   { "caption": "rerun last go test", "command": "rerun_last_go_test" }
+]
