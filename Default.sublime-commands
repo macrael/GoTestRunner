@@ -1,4 +1,6 @@
 [
-   { "caption": "run go test", "command": "run_go_test" },
-   { "caption": "rerun last go test", "command": "rerun_last_go_test" }
+   { "caption": "Run Go Test", "command": "run_go_test" },
+   { "caption": "Run Go Test File", "command": "run_go_test_file" },
+   { "caption": "Run Go Package Tests", "command": "run_go_package_tests" },
+   { "caption": "Rerun Last Go Test", "command": "rerun_last_go_test" }
 ]

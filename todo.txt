@@ -1,0 +1,11 @@
+x run a command
+x rerun a command
+x do file
+x do package
+x license
+* README
+* pick default key-combos?
+* release
+* add a button to the UI to click and run a test?
+* print errors into the little bar at the bottom?
+* That global is really global. Probably should stash it on the window() if possible. 
