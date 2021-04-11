@@ -31,3 +31,8 @@ You can add a shortcut by going to Sublime Text > Preferences > Key Bindings and
 { "keys": ["super+shift+;"], "command": "run_go_test"},
 { "keys": ["super+shift+'"], "command": "rerun_last_go_test"},
 ```
+
+## Credits
+In order to determine the test name from the current line number, this plugin includes a copy of https://github.com/jim/wtfunc
+
+Future work could combine them and include a build step.
