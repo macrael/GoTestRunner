@@ -14,7 +14,7 @@ It exposes four commands:
 This is not currently published in the plugin directory so you need to install it manually. 
 
 This project needs to be placed in `~/Library/Application Support/Sublime Text 3/Packages`
-If you want to be able to hack on it, I reccomend checking out this project and then linking it in:
+If you want to be able to hack on it, I recommend checking out this project and then linking it in:
 
 ```
 git clone github.com/macrael/GoTestRunner
