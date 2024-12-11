@@ -3,9 +3,14 @@ x rerun a command
 x do file
 x do package
 x license
-* README
-* pick default key-combos?
-* release
-* add a button to the UI to click and run a test?
+x README
+* add gotchas to the readme
 * print errors into the little bar at the bottom?
+    x basics
+    * maybe error if there aren't any tests to run?
+    * do something smart if your cursor is in the test display window?
+* pick default key-combos?
+* add a button to the UI to click and run a test?
 * That global is really global. Probably should stash it on the window() if possible. 
+* display the test command being run in the window
+* make it a package, mypy, is there anything testable?
